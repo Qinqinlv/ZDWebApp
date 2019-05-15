@@ -1,0 +1,7 @@
+F:\code\ZDWebApp\ZDWebApp\bin\ZDWebApp.dll.config
+F:\code\ZDWebApp\ZDWebApp\bin\ZDWebApp.dll
+F:\code\ZDWebApp\ZDWebApp\bin\ZDWebApp.pdb
+F:\code\ZDWebApp\ZDWebApp\obj\Debug\ZDWebApp.csproj.CoreCompileInputs.cache
+F:\code\ZDWebApp\ZDWebApp\obj\Debug\ZDWebApp.dll
+F:\code\ZDWebApp\ZDWebApp\obj\Debug\ZDWebApp.pdb
+F:\code\ZDWebApp\ZDWebApp\obj\Debug\ZDWebApp.csprojAssemblyReference.cache

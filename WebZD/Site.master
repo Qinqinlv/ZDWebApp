@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %>- 专业查证书，找资质，找人才</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/css/ionic.min.css" rel="stylesheet">
+    <script src="Script/js/ionic.bundle.min.js"></script>
+    <link href="Imanges/logo16.ico" rel="shortcut icon" type="image/x-icon" />
+    <asp:PlaceHolder runat="server">           
+        <script src="<%: ResolveUrl("~/Scripts/modernizr-2.6.2.js") %>"></script>
+    </asp:PlaceHolder>
+    <link href="~/Imanges/logo16.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form runat="server">
+    <asp:ScriptManager runat="server">
+        <Scripts>
+            <asp:ScriptReference Name="jquery" />
+            <asp:ScriptReference Name="jquery.ui.combined" />
+        </Scripts>
+    </asp:ScriptManager>
+    <header>
+        <div class="content-wrapper main-content">
+            <div class="float-left">
+                <p class="site-title"><img src="Images/logo32.ico"/><a runat="server" href="Images/logo32.ico">证典</a></p>
+                <span style="margin: 73px;text-align: center;">专业查证书，找资质，找人才</span>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <div class="tabs tabs-positive tabs-icon-top">
+		<a class="tab-item active" href="Default.aspx">
+			<i class="icon ion-ios-home-outline"></i>首页
+		</a>
+		<a class="tab-item"  href="About.aspx">
+			<i class="icon ion-ios-paper-outline"></i>查证书
+		</a>
+		<a class="tab-item has-badge active" href="Contact.aspx">
+			<i class="icon ion-ios-eye-outline"></i>查资质
+		</a>
+		<a class="tab-item" href="My.aspx">
+			<i class="icon ion-ios-person-outline"></i>我的
+		</a>
+	</div>
+    </footer>
+    </form>
+</body>
+</html>
